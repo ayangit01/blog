@@ -1,2 +1,11 @@
-<app-user name = "Ayan Ghosh" age= 20 status="single" salary= 10000></app-user>
-<app-user name = "Anoy"></app-user>
+<div  style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+    <app-user 
+    *ngFor="let user of users"
+[name] = "user.name" 
+[age]= "user.age" 
+[status]="user.staTus" 
+[salary]= "user.salary"
+[image]= "user.Image">
+</app-user>
+
+</div>

@@ -10,5 +10,5 @@ export class UserComponent {
  @Input() age: number;
  @Input() status: string;
  @Input() salary: number;
-
+ @Input() image: string;
 }
